@@ -31,6 +31,9 @@ group :development, :test do
   # gem 'spork-testunit'
   # gem 'guard-test'
   # gem 'ruby-prof'
+  gem 'listen', '0.6.0'
+  gem 'rb-fsevent', '0.9.1'#, :require => false
+
 end
 
 # Use sqlite3 as the database for Active Record
@@ -62,7 +65,6 @@ group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
 
-  gem 'rb-fsevent', '0.9.1', :require => false
   gem 'growl', '1.0.3'
 end
 
