@@ -12,7 +12,8 @@ gem 'pg', '0.15.1'
 
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.0.1'
-gem 'database_cleaner', '~> 1.0.1'
+gem 'database_cleaner', '~> 1.1.1'
+gem 'rails_12factor', '0.0.2'
 
 group :development, :test do
   #ruby-gemset=rails_4_0_rspec
@@ -69,9 +70,9 @@ group :doc do
 end
 
 # Include static assets gem in production for deployment to Heroku.
-group :production do
-  gem 'rails_12factor', '0.0.2'
-end
+# group :production do
+#   gem 'rails_12factor', '0.0.2'
+# end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
