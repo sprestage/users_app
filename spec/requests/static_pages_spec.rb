@@ -11,18 +11,20 @@ describe "Static pages" do
 
 	it "should have the right links on the layout" do
 		visit root_path
-		click_link "Home"
 		click_link "Sign up now!"
-		click_link "users app"
+		expect(page).to have_title(full_title('Sign up'))
+		# click_link "users app"
+		# expext(page).to have_title(full_title('Susan'))
 	end
 
 	describe "Home page" do
 		before { visit root_path }
 		let(:heading)    { 'Users App' }
-		let(:page_title) { '' }
+		let(:page_title) { "" }
 
 		it_should_behave_like "all static pages"
-		it { should_not have_title 'title', text: '| Home' }
+		it { should_not have_title(full_title('| Home')) }
+		# it { should_not have_title 'title', text: '| Home' }
 	end
 
 
