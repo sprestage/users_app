@@ -10,7 +10,7 @@ gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 # Include static assets gem in production for deployment to Heroku.
 # I use PostGreSQL for test, dev, and prod,
 #  which is why I don't include this in prod.
-gem 'pg', '0.15.1'
+gem 'pg'
 
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
