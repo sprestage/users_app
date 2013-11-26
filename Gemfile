@@ -2,37 +2,37 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.1'
 gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
 gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 
 #ruby-gemset=rails_4_0_initial
 # Include static assets gem in production for deployment to Heroku.
-# I use PostGreSQL for test, dev, and prod, 
+# I use PostGreSQL for test, dev, and prod,
 #  which is why I don't include this in prod.
 gem 'pg', '0.15.1'
 
-gem 'bootstrap-sass', '2.3.2.0'
-gem 'bcrypt-ruby', '3.0.1'
-gem 'database_cleaner', '~> 1.1.1'
-gem 'rails_12factor', '0.0.2'
+gem 'bootstrap-sass'
+gem 'bcrypt-ruby'
+gem 'database_cleaner'
+gem 'rails_12factor'
 
 group :development, :test do
   #ruby-gemset=rails_4_0_rspec
-  gem 'rspec-rails', "~> 2.13.1"
+  gem 'rspec-rails'
 
   #ruby-gemset=rails_4_0_guard
-  gem 'guard-rspec', '1.2.1'
-  gem 'childprocess', '0.3.6'
+  gem 'guard-rspec'
+  gem 'childprocess'
   #ruby-gemset=rails_4_0_spork
   gem 'spork-rails', github: 'sporkrb/spork-rails'
-  gem 'guard-spork', '1.5.0'
+  gem 'guard-spork'
   # gem 'spork', '0.9.2'
   # gem 'spork-testunit'
   # gem 'guard-test'
   # gem 'ruby-prof'
-  gem 'listen', '0.6.0'
-  gem 'rb-fsevent', '0.9.1'#, :require => false
+  gem 'listen'
+  gem 'rb-fsevent'#, :require => false
 
 end
 
@@ -40,34 +40,34 @@ end
 #gem 'sqlite3'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 2.1.1'
+gem 'uglifier'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '3.0.4'
+gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks', '1.1.1'
+gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder'
 
 group :test do
   #ruby-gemset=rails_4_0
-  gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.1.0'
+  gem 'selenium-webdriver'
+  gem 'capybara'
 
-  gem 'growl', '1.0.3'
+  gem 'growl'
 
-  gem 'factory_girl_rails', '4.2.1'
+  gem 'factory_girl_rails'
 end
 
 group :doc do
