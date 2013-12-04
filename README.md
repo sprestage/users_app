@@ -7,6 +7,12 @@ Generate a Rails app that allows a user to create, edit, update, and destroy (de
 If you have time, add extra features to this app (be creative) and tell us what you did so we don’t miss it.
 
 
+Critical Failures
+=======
+
+Tests are failing.  Looks like a DB error.
+
+
 
 
 
