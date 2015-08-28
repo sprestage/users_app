@@ -1,4 +1,3 @@
-[![Dependency Status](https://gemnasium.com/sprestage/users_app.png)](https://gemnasium.com/sprestage/users_app)
 
 # CodeFellows code challenge, part 3:
 
